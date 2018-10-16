@@ -11,6 +11,7 @@ public class Test {
 		ArrayOfString weatherbyCityName = wwss.getWeatherbyCityName("…œ∫£");
 		for (String st : weatherbyCityName.getString()) {
 						System.out.println(st);
+						System.out.println("---------------------------------------------");
 		}
 	}
 }
