@@ -9,9 +9,14 @@ public class Test {
 		WeatherWebService wws = new WeatherWebService();
 		WeatherWebServiceSoap wwss = wws.getWeatherWebServiceSoap();
 		ArrayOfString weatherbyCityName = wwss.getWeatherbyCityName("…œ∫£");
+		ArrayOfString provinceName = wwss.getSupportProvince();
 		for (String st : weatherbyCityName.getString()) {
 						System.out.println(st);
-						System.out.println("---------------------------------------------");
 		}
+		System.out.println("---------------------------------------------------"
+				+ "------------------------------------------------------------");
+		for (String pro : provinceName.getString()) {
+			System.out.println(pro);
+}
 	}
 }
